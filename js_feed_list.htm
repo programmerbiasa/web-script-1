@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h2>HTML List from js array</h2>
+
+<ul id="usersList">
+</ul>
+
+<script type="text/javascript">
+var users = ['michael@michael.com', 'janet@janet.com', 'helene@helene.com'];
+var iLoop = 0;
+var usersList = document.getElementById("usersList");
+
+for (iLoop; iLoop < users.length; iLoop++) {
+usersList.innerHTML += '<li>'+users[iLoop]+'</li>';
+}
+</script>
+</body>
+<!--
+https://www.codecademy.com/
+https://developer.mozilla.org/en-US/
+https://www.sourcecodester.com/
+-->
+</html>
