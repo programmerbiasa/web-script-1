@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>Filter / Search Table</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+  </head>
+
+  <body>
+    <form>
+      <input
+        type="radio"
+        id="radioButtonName"
+        name="filter"
+        value="name"
+        onclick="changeFilter()"
+      /><label for="radioButtonName">Name</label>
+      <input
+        type="radio"
+        id="radioButtonCountry"
+        name="filter"
+        value="country"
+        onclick="changeFilter()"
+      /><label for="radioButtonCountry">Country</label>
+
+      <input
+        type="text"
+        id="myInput"
+        onkeyup="myFunction()"
+        placeholder="Search for names..."
+        title="Type in a name"
+      />
+    </form>
+
+    <table id="myTable" border="1">
+      <tr>
+        <th style="width: 60%">Name</th>
+        <th style="width: 40%">Country</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Berglunds snabbkop</td>
+        <td>Sweden</td>
+      </tr>
+      <tr>
+        <td>Island Trading</td>
+        <td>UK</td>
+      </tr>
+      <tr>
+        <td>Koniglich Essen</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Laughing Bacchus Winecellars</td>
+        <td>Canada</td>
+      </tr>
+      <tr>
+        <td>Magazzini Alimentari Riuniti</td>
+        <td>Italy</td>
+      </tr>
+      <tr>
+        <td>North/South</td>
+        <td>UK</td>
+      </tr>
+      <tr>
+        <td>Paris specialites</td>
+        <td>France</td>
+      </tr>
+    </table>
+
+    <script type="text/javascript" src="path-to-javascript-file.js"></script>
+  </body>
+</html>
+<!--
+HTML The Missing Manual;Matthew MacDonald
+Teach Yourself HTML, CSS, and JavaScript;Jennifer Kyrnin, Julie Meloni
+HTML and CSS;Jon Duckett
+JavaScript and JQuery;Jon Duckett
+Web and JavaScript;O'reilly Series
+Web and JavaScript;Packt Series
+https://www.codecademy.com/
+https://www.coursera.org/
+https://www.udemy.com/
+https://www.w3schools.com/
+http://web.simmons.edu/
+-->

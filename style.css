@@ -1,0 +1,31 @@
+/* style for js_filter_table_fin.htm */
+
+#myInput {
+    /* background-image: url(); */
+    width: 90%; /* Full-width */
+    font-size: 16px; /* increase font-size */
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd; /* grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myTable {
+    border-collapse: collapse;
+    width: 100%; /* Full-width */
+    border: 1px solid #ddd; /* grey border */
+    font-size: 18px; /* increase font-size */
+}
+
+#myTable th, #myTable td {
+    text-align: left; /* Left-align text */
+    padding: 12px;
+}
+
+#myTable tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd;
+}
+#myTable tr.header, #myTable tr:hover {
+    /* Add a grey background color to the table */
+    background-color: #f1f1f1;
+}
