@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Play It Yourself</title>
+  <style type="text/css">
+    div {
+      height: 200px;
+      line-height: 200px;
+      color: white;
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  div#resetButton {
+    clear: both;
+    top: 0px;
+    line-height:0px;
+    height:0px;
+    padding-top:0px;
+    color:black;
+    text-align: right;
+    text-decoration: underline;
+  }
+  div#resetButton:hover {
+    cursor: hand;qq
+    text-decoration: none;
+  }
+  </style>
+</head>
+<body>
+  <div onclick="changeColor(this)" style="background-color: red;">
+     Tap me to change my color!
+  </div>
+  <br>
+  <div id="resetButton" onclick="window.location.reload()">Reset</div>
+
+  <script type="text/javascript">
+      function changeColor(element) {
+      const currentColor = element.style.backgroundColor;
+      var randomColor1 = Math.floor(Math.random()*(255-0+1)) + 0;
+      var randomColor2 = Math.floor(Math.random()*(255-0+2)) + 0;
+      var randomColor3 = Math.floor(Math.random()*(255-0+3)) + 0;
+      if (currentColor == "red") {
+        // using array js
+        element.style.backgroundColor = ["rgb(",randomColor1,",",randomColor2,",",randomColor3,")"].join("");
+        element.innerHTML = 'rgb('+randomColor1+', '+randomColor2+', '+randomColor3+')';       
+      } else {
+        element.style.backgroundColor = "red"; 
+      }
+    }
+  </script>
+</body>
+</html>
